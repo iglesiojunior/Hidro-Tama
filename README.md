@@ -23,7 +23,7 @@ Os componentes foram escolhidos com base nos requisitos do projeto, priorizando 
 
 Principais componentes:  
 - **Display OLED SSD1306 (128x32 pixels)** – Baixo consumo de energia e alta legibilidade.  
-- **Sensores diversos** – Dependendo do objetivo do projeto (por exemplo, temperatura, umidade, gases).  
+- **Sensor DHT11** – Sensor de temperatura e umidade usado para a coleta de dados do ambiente que afetam diretamente o tamagochi.  
 - **Botões e controles adicionais** – Para navegação no menu e interação com o usuário.  
 
 ### **3. Estrutura do Software**  
