@@ -27,7 +27,7 @@ void mostrar_valor_microfone(ssd1306_t *oled, uint16_t mic_value) {
     ssd1306_show(oled);  // Atualiza a tela
 }
 
-void dht11_read(int *temperature, int *humidity) {
+bool dht11_read(int *temperature, int *humidity) {
     uint32_t data = 0;  // Variável para armazenar os dados brutos do sensor
     uint8_t bits[5] = {0}; // Array para armazenar os bits de dados
 
@@ -61,6 +61,8 @@ void dht11_read(int *temperature, int *humidity) {
         *temperature = -1;          // Erro na leitura
         *humidity = -1;             // Erro na leitura
     }
+
+    return true;
 }
 
 void init_dht_sensor() {

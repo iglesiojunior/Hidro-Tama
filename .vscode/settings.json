@@ -41,6 +41,7 @@
         "smile_test.h": "c",
         "stdio.h": "c",
         "sensors_utils.h": "c",
-        "adc.h": "c"
+        "adc.h": "c",
+        "stdlib.h": "c"
     }
 }

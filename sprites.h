@@ -7,5 +7,8 @@
     void rosto_padrao(ssd1306_t *display);
     void alimentando(ssd1306_t *display);
     void tomando_agua(ssd1306_t *display);
+    void esperando(ssd1306_t *display);
+    void feliz(ssd1306_t *display);
+    void triste(ssd1306_t *display);
 
 #endif

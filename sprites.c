@@ -145,7 +145,7 @@ void draw_tamagotchi_face_blink(ssd1306_t *display) {
     ssd1306_clear_square(display, 5, 9, 8, 1);
     ssd1306_clear_square(display, 21, 9, 8, 1);  
 
-    ssd1306_show(display);
+    // ssd1306_show(display);
 
 }
 
@@ -250,13 +250,13 @@ void feliz(ssd1306_t *display){
     ssd1306_draw_square(display, 22, 7, 5, 6);  // Olho direito (branco)
 
     //boca
-    ssd1306_draw_square(display, 6, 27, 20, 1);
-    ssd1306_draw_square(display, 5, 26, 2, 1);
-    ssd1306_draw_pixel(display, 4, 25);
-    ssd1306_draw_pixel(display, 3, 24);
-    ssd1306_draw_square(display, 26, 27, 2, 1);
-    ssd1306_draw_pixel(display, 27, 26);
-    ssd1306_draw_pixel(display, 28, 25);
+    ssd1306_clear_square(display, 6, 27, 20, 1);
+    ssd1306_clear_square(display, 5, 26, 2, 1);
+    ssd1306_clear_pixel(display, 4, 25);
+    ssd1306_clear_pixel(display, 3, 24);
+    ssd1306_clear_square(display, 26, 27, 2, 1);
+    ssd1306_clear_pixel(display, 27, 26);
+    ssd1306_clear_pixel(display, 28, 25);
 
 }
 
@@ -273,13 +273,13 @@ void triste(ssd1306_t *display){
     ssd1306_draw_square(display, 22, 7, 5, 6);  // Olho direito (branco)
 
     //boca
-    ssd1306_draw_square(display, 6, 27, 20, 1);
-    ssd1306_draw_square(display, 5, 28, 2, 1);
-    ssd1306_draw_pixel(display, 4, 29);
-    ssd1306_draw_pixel(display, 3, 30);
-    ssd1306_draw_square(display, 26, 28, 2, 1);
-    ssd1306_draw_pixel(display, 27, 29);
-    ssd1306_draw_pixel(display, 28, 30);
+    ssd1306_clear_square(display, 6, 27, 20, 1);
+    ssd1306_clear_square(display, 5, 28, 2, 1);
+    ssd1306_clear_pixel(display, 4, 29);
+    ssd1306_clear_pixel(display, 3, 30);
+    ssd1306_clear_square(display, 26, 28, 2, 1);
+    ssd1306_clear_pixel(display, 27, 29);
+    ssd1306_clear_pixel(display, 28, 30);
 }
 
 void tomando_agua(ssd1306_t *display){

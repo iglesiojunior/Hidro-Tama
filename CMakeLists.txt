@@ -28,7 +28,7 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(teste_temperatura C CXX ASM)
+project(hidro_tama C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
@@ -39,9 +39,10 @@ add_executable(main
     main.c 
     sprites.c
     sensors_utils.c
+    wifi_utils.c
     )
 
-pico_set_program_name(main "teste_temperatura")
+pico_set_program_name(main "hidro_tama")
 pico_set_program_version(main "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
@@ -54,6 +55,9 @@ target_link_libraries(main
         pico-ssd1306
         hardware_i2c
         hardware_adc
+        pico_cyw43_arch_lwip_threadsafe_background
+        pico_lwip_mbedtls
+        pico_multicore
         )
 
 # Add the standard include files to the build
