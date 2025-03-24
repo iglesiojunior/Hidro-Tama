@@ -66,3 +66,6 @@ O sistema possui um menu interativo, permitindo ao usuário navegar entre difere
 - Alimentar: Alimenta uma vez o pet e diminui seu status de fome.
 - Refrescar: Espera o usuário soprar no microfone e exibe uma mensagem visual de refrescamento. Além disso diminui o status de calor, aumenta o status de hidratação e aumenta o humor.
 - Hidratar: Exibe uma mensagem visual do pet bebendo um copo de água por canudinho e aumenta o status de hidratação e diminui o status de calor.
+
+## Vídeo de funcionamento do projeto:
+- https://youtu.be/HraRt_CKzZM
